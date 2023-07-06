@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="urn:sama" xmlns:ps="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.07" xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.01">
+    <AppHdr>
+        <head:Fr>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:ClrSysMmbId>
+                        <head:MmbId>SA9999</head:MmbId>
+                    </head:ClrSysMmbId>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:Fr>
+        <head:To>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:ClrSysMmbId>
+                        <head:MmbId>TSA9999</head:MmbId>
+                    </head:ClrSysMmbId>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:To>
+        <head:BizMsgIdr>B20220824SA999900006H00311026707084</head:BizMsgIdr>
+        <head:MsgDefIdr>pacs.002.001.07</head:MsgDefIdr>
+        <head:CreDt>2022-08-24T13:26:57</head:CreDt>
+    </AppHdr>
+    <MessageStatusReport>
+        <ps:FIToFIPmtStsRpt>
+            <ps:GrpHdr>
+                <ps:MsgId>M20220824SAHSBCHSBC6B00011026202147</ps:MsgId>
+                <ps:CreDtTm>2022-08-24T13:26:57</ps:CreDtTm>
+            </ps:GrpHdr>
+            <ps:OrgnlGrpInfAndSts>
+                <ps:OrgnlMsgId>M20220824SARBSGBBBB2BXXX21250737674</ps:OrgnlMsgId>
+                <ps:OrgnlMsgNmId>pacs.008.001.06</ps:OrgnlMsgNmId>
+                <ps:OrgnlCreDtTm>2022-08-24T13:26:49</ps:OrgnlCreDtTm>
+                <ps:OrgnlNbOfTxs>1</ps:OrgnlNbOfTxs>
+            </ps:OrgnlGrpInfAndSts>
+            <ps:TxInfAndSts>
+                <ps:StsId>StatusIdentification</ps:StsId>
+                <ps:OrgnlInstrId>20220824SARBSGRBSG3BS9821250285737</ps:OrgnlInstrId>
+                <ps:OrgnlEndToEndId>EndToEndId</ps:OrgnlEndToEndId>
+                <ps:OrgnlTxId>M20220824SARBSG00002BRCL26849285741</ps:OrgnlTxId>
+                <ps:TxSts>ACTC</ps:TxSts>
+                <ps:AccptncDtTm>2022-08-24T13:26:57</ps:AccptncDtTm>
+                <ps:ClrSysRef>001</ps:ClrSysRef>
+                <ps:InstgAgt>
+                    <ps:FinInstnId>
+                        <ps:ClrSysMmbId>
+                            <ps:MmbId>SAHSBC</ps:MmbId>
+                        </ps:ClrSysMmbId>
+                    </ps:FinInstnId>
+                </ps:InstgAgt>
+                <ps:InstdAgt>
+                    <ps:FinInstnId>
+                        <ps:ClrSysMmbId>
+                            <ps:MmbId>SARBSG</ps:MmbId>
+                        </ps:ClrSysMmbId>
+                    </ps:FinInstnId>
+                </ps:InstdAgt>
+                <ps:OrgnlTxRef>
+                    <ps:IntrBkSttlmAmt Ccy="SAR">1.00</ps:IntrBkSttlmAmt>
+                    <ps:IntrBkSttlmDt>2022-08-23</ps:IntrBkSttlmDt>
+                    <ps:PmtTpInf>
+                        <ps:LclInstrm>
+                            <ps:Prtry>OTH</ps:Prtry>
+                        </ps:LclInstrm>
+                    </ps:PmtTpInf>
+                    <ps:Dbtr>
+                        <ps:Nm>Dbtr Nm</ps:Nm>
+                        <ps:PstlAdr>
+                            <ps:AdrTp>ADDR</ps:AdrTp>
+                            <ps:StrtNm>Dbtr EFGH</ps:StrtNm>
+                            <ps:BldgNb>Dbtr BldgNb</ps:BldgNb>
+                            <ps:PstCd>Dbtr PstCd</ps:PstCd>
+                            <ps:TwnNm>Dbtr TwnNm</ps:TwnNm>
+                            <ps:CtrySubDvsn>Dbtr AAAA</ps:CtrySubDvsn>
+                            <ps:Ctry>AD</ps:Ctry>
+                            <ps:AdrLine>Dbtr AD1</ps:AdrLine>
+                            <ps:AdrLine>Dbtr AD2</ps:AdrLine>
+                            <ps:AdrLine>Dbtr AD3</ps:AdrLine>
+                            <ps:AdrLine>Dbtr AD4</ps:AdrLine>
+                            <ps:AdrLine>Dbtr AD5</ps:AdrLine>
+                            <ps:AdrLine>Dbtr AD6</ps:AdrLine>
+                            <ps:AdrLine>Dbtr AD7</ps:AdrLine>
+                        </ps:PstlAdr>
+                        <ps:Id>
+                            <ps:OrgId>
+                                <ps:Othr>
+                                    <ps:Id>SAHSBC</ps:Id>
+                                </ps:Othr>
+                            </ps:OrgId>
+                        </ps:Id>
+                    </ps:Dbtr>
+                    <ps:DbtrAcct>
+                        <ps:Id>
+                            <ps:IBAN>SA334644134225121127</ps:IBAN>
+                        </ps:Id>
+                        <ps:Nm>DbtrAcct Nm</ps:Nm>
+                    </ps:DbtrAcct>
+                    <ps:DbtrAgt>
+                        <ps:FinInstnId>
+                            <ps:ClrSysMmbId>
+                                <ps:MmbId>SARBSG</ps:MmbId>
+                            </ps:ClrSysMmbId>
+                        </ps:FinInstnId>
+                    </ps:DbtrAgt>
+                    <ps:CdtrAgt>
+                        <ps:FinInstnId>
+                            <ps:ClrSysMmbId>
+                                <ps:MmbId>SAHSBC</ps:MmbId>
+                            </ps:ClrSysMmbId>
+                        </ps:FinInstnId>
+                    </ps:CdtrAgt>
+                    <ps:Cdtr>
+                        <ps:Nm>Cdtr Nm</ps:Nm>
+                        <ps:PstlAdr>
+                            <ps:AdrTp>ADDR</ps:AdrTp>
+                            <ps:StrtNm>Cdtr EFGH</ps:StrtNm>
+                            <ps:BldgNb>Cdtr BldgNb</ps:BldgNb>
+                            <ps:PstCd>Cdtr PstCd</ps:PstCd>
+                            <ps:TwnNm>Cdtr TwnNm</ps:TwnNm>
+                            <ps:CtrySubDvsn>Cdtr AAAA</ps:CtrySubDvsn>
+                            <ps:Ctry>AD</ps:Ctry>
+                            <ps:AdrLine>Cdtr AD1</ps:AdrLine>
+                            <ps:AdrLine>Cdtr AD2</ps:AdrLine>
+                            <ps:AdrLine>Cdtr AD3</ps:AdrLine>
+                            <ps:AdrLine>Cdtr AD4</ps:AdrLine>
+                            <ps:AdrLine>Cdtr AD5</ps:AdrLine>
+                            <ps:AdrLine>Cdtr AD6</ps:AdrLine>
+                            <ps:AdrLine>Cdtr AD7</ps:AdrLine>
+                        </ps:PstlAdr>
+                        <ps:Id>
+                            <ps:OrgId>
+                                <ps:Othr>
+                                    <ps:Id>SAHSBC</ps:Id>
+                                </ps:Othr>
+                            </ps:OrgId>
+                        </ps:Id>
+                    </ps:Cdtr>
+                    <ps:CdtrAcct>
+                        <ps:Id>
+                            <ps:IBAN>SA184538281311715547</ps:IBAN>
+                        </ps:Id>
+                        <ps:Nm>CdtrAcct Nm</ps:Nm>
+                    </ps:CdtrAcct>
+                </ps:OrgnlTxRef>
+            </ps:TxInfAndSts>
+        </ps:FIToFIPmtStsRpt>
+    </MessageStatusReport>
+</Message>
